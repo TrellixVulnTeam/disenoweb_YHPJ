@@ -1,0 +1,44 @@
+
+body {
+    background-image: url(../img/fondo.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-y:100px;
+}
+.barra-titulo {
+    align-items: center;
+    /ion: dashed; */
+    background-color: #c76a6a;
+    list-style-type: none;
+    font-size: 18px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    height: 100px;
+    padding: 5px;
+    
+}
+.especialidades {
+    background-color: #ce9494;
+}
+.logo {
+    width="250"
+    
+    /* size: 300px; */
+
+}
+.head_titulo {
+    padding: auto;
+
+    border-color: aquamarine;
+    border-style: double;
+    border-width: 10px;
+    background-color: aliceblue;
+
+}
+.lista_especialista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+}
