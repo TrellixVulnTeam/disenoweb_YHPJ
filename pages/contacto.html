@@ -1,3 +1,4 @@
+<!-- {% extends 'padre.html' %} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,48 +8,46 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    {% block Cambia %}
+       
+        <div>
 
-        <h1>CONTACTO</h1>
+            <h1 class="titulo">CONTACTO</h1>
 
 
-    </div>
-    <div>
-        <form action="">
-            <fieldset>
-                <legend>Información de contacto</legend>
-                <label for="name">Nombre:</label>
-                <input type="text" name="name">
-                <label for="last-name">Apellido:</label>
-                <input type="text" name="last-name">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email">
-                <br>
-                <br>
-                Consulta:<br>
-                <textarea name="coonsulta" rows="5" cols="60"></textarea> <br>
-                
-            </fieldset>    
-        </form>
+        </div>
+        <div class="datos_contacto">
+            <form action="">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name">
+                    <label for="last-name">Apellido:</label>
+                    <input type="text" name="last-name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email">
+                    <br>
+                    <br>
+                    Consulta:<br>
+                    <textarea name="coonsulta" rows="5" cols="60"></textarea> <br>
+                    
+                </fieldset>    
+            </form>
 
-    </div>
-    <div>
-        <br>
-        <br>
-        <h3>DONDE ENCONTRARNOS:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3420.579707788271!2d-64.09595368255614!3d-30.98220899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432639be2bd8d57%3A0x6c0f4a6b1a9755fa!2sAmeghino%20145%2C%20X5220%20Jesus%20Mar%C3%ADa%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1648591652218!5m2!1ses-419!2sar" width="450" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div>
+            <h2>
+                <ul>
+                    <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="../pages/marcas.html">MARCAS</a></li>
+                    <li><a href="../index.html">QUIENES SOMOS</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="../pages/ubicacion.html">DONDE ENCONTRARNOS</a></li>
+                </ul>
+            </h2>
 
-    </div>
-    <div>
-        <h2>
-            <ul>
-                <li><a href="../pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="../pages/marcas.html">MARCAS</a></li>
-                <li><a href="../index.html">QUIENES SOMOS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </h2>
-
-    </div>
+        </div>
+    {% endboock %}    
 </body>
 </html>

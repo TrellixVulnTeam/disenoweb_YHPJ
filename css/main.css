@@ -6,23 +6,32 @@ body {
     background-size:contain;
     background-position-y:100px;
 }
+.head_titulo{
+display: flex;
+flex-flow: row wrap;
+
+}
 .barra-titulo {
     align-items: center;
-    /ion: dashed; */
-    background-color: #c76a6a;
+    background-color: #080808;
+    color: #f0ffff;
     list-style-type: none;
     font-size: 18px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    height: 100px;
+    height: 75px;
     padding: 5px;
     
 }
 .especialidades {
     background-color: #ce9494;
+    list-style-type: none;
+    width: 400px;
 }
 .logo {
-    width="250"
+    padding: 5px;
+    width: 150px
+    /* height: 30px; */
     
     /* size: 300px; */
 
@@ -41,4 +50,39 @@ body {
     flex-direction: row;
     justify-content: center;
     height: 300px;
+}
+
+.social-icons ol li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+   
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 0.5rem;
+    width: 0.5rem; */
+  }
+ 
+.social-icons ol li {
+    width:100px
+}  
+.titulo {
+    font-size: x-large;
+    font-style: italic;
+    color: #f14e4e;
+    background-color: #080808;
+}
+.imagenes_inferiores{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 2rem;
+    height: 3rem;
+}
+.datos_contacto {
+    padding: 15px;
+    line-height: 2px;
+    list-style: circle;
+    background-color: #9b6060;
 }
