@@ -5,49 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Contacto</title>
 </head>
+
 <body>
-    {% block Cambia %}
-       
-        <div>
+    <div class="contenedor">
+        <header>
+            <div class="head_titulo">
+                <ol class="barra-titulo">
+                    <li> Domicilio: Ameghino 145 - Jesús María - Córdoba </li>
+                    <li> Horario de atención: Lun a Vier 9 a 12 y 15 a 19 sábados: 9 a 12 </li>
+                    <li> Teléfono: 3525 - 503775 </li>
 
-            <h1 class="titulo">CONTACTO</h1>
+                </ol>
+            </div>
+        </header>
 
+         
+        <main>
+            <div class="nombre_negocio">
+                <h1>LONDERO REPUESTOS</h1>
+                <img class="logo" src="../img/logo.jpg" alt="logo londero rep" >
+               
 
-        </div>
-        <div class="datos_contacto">
-            <form action="">
-                <fieldset>
-                    <legend>Información de contacto</legend>
-                    <label for="name">Nombre:</label>
-                    <input type="text" name="name">
-                    <label for="last-name">Apellido:</label>
-                    <input type="text" name="last-name">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email">
-                    <br>
-                    <br>
-                    Consulta:<br>
-                    <textarea name="coonsulta" rows="5" cols="60"></textarea> <br>
-                    
-                </fieldset>    
-            </form>
-
-        </div>
-        
-        <div>
+            </div>
+        </main>         
+           
+        <aside>
+            <div class="datos_contacto">
+                <form action="">
+                    <fieldset>
+                        <legend>Información de contacto</legend>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name">
+                        <label for="last-name">Apellido:</label>
+                        <input type="text" name="last-name">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email">
+                        <br>
+                        <br>
+                        <h4>Consulta:<br></h4>
+                        <textarea name="coonsulta" rows="12" cols="122"></textarea> <br>
+                        
+                    </fieldset>    
+                </form>
+    
+            </div>
+            
+        </aside>    
+        <nav class="menu">
             <h2>
                 <ul>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="../pages/productos.html">PRODUCTOS</a></li>
                     <li><a href="../pages/marcas.html">MARCAS</a></li>
-                    <li><a href="../index.html">QUIENES SOMOS</a></li>
                     <li><a href="../pages/contacto.html">CONTACTO</a></li>
                     <li><a href="../pages/ubicacion.html">DONDE ENCONTRARNOS</a></li>
                 </ul>
+                <div>
+                    <h4 class="envios">HACEMOS ENVIOS A TODO EL PAIS</h4>
+            
+                </div>
             </h2>
 
-        </div>
-    {% endboock %}    
+        </nav>
+        <footer>
+           
+            <div class="imagenes_inferiores">
+                
+                <img src="../img/apex.jpg" alt="apex" class="marca">
+                <img src="../img/capemi.png" alt="capemi" class="marca">
+                <img src="../img/cofap.jpg" alt="cofap" class="marca">
+                <img src="../img/corven.jpg" alt="corven" class="marca">
+                <img src="../img/icsa.jpg" alt="icsa" class="marca">
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
