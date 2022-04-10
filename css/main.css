@@ -14,6 +14,7 @@ header, aside, main , nav, footer{
 }
 .contenedor , .otro-contenedor{
     padding: 2px;
+    /* height: 50em; */
     display: grid;
     background-color: #020202;
     /* grid-template-columns: 1fr 1fr 1fr;
@@ -50,9 +51,12 @@ main{
 }
 aside{
     grid-area: aside;
+    justify-self: center;
 }
 nav{
     grid-area: nav;
+    justify-content: center;
+    justify-self: end;
 }
 footer{
     grid-area: footer;
@@ -193,8 +197,8 @@ footer{
     height: 3rem; */
 }
 .marca{
-    width: 15em;
-    height: 10em;
+    width: 12em;
+    height: 8em;
 }
 .datos-ubicacion{
     display: flex;
@@ -208,7 +212,7 @@ footer{
     flex-flow: column wrap;
     justify-content: flex-start;
     width: 64em;
-    height: 28em;
+    height: 25em;
     padding: 3px;
     line-height: 2px;
     list-style: circle;
@@ -237,7 +241,7 @@ footer{
     justify-content: flex-start;
     align-items: flex-start;
     width: 62em;
-    height: 26em;
+    height: 22em;
     
 
 }
@@ -245,6 +249,7 @@ footer{
 .imagenes-marcas{
     display: grid;
     justify-content: space-around;
+    justify-items: center;
     grid-area: auto;
     grid-column: 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
