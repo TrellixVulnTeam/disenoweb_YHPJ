@@ -1,47 +1,57 @@
+@import url(//db.onlinewebfonts.com/c/7b332d1e093f175988afb875e2883f40?family=Emblem);
 
-/* body {
-    background-image: url(../img/fondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-y:100px;
-  
-} */
+@font-face {font-family: "Emblem";
 
+    src: url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.eot"); /* IE9*/
+
+    src: url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+
+    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.woff2") format("woff2"), /* chrome firefox */
+
+    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.woff") format("woff"), /* chrome firefox */
+
+    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+
+    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.svg#Emblem") format("svg"); /* iOS 4.1- */
+
+}
+.imagen-fondo{
+    background-color: black;
+    display: flex;
+    justify-content:center;
+}
+.fondo-inicio-p{
+    display: block;
+    width: 300px;    
+}
+.fondo-inicio{
+    display: none;
+}
+.nombre-negocio{
+    text-align:  center;
+    font-family: Emblem;
+    font-size: 30px;
+    font-weight: 200;
+}
 header, aside, main , nav, footer{
-    border-color: #43af5c;
-    border-radius: 3px;
+    /* border: solid 1px blue; */
+    background-color: black;
 }
 .contenedor , .otro-contenedor{
     padding: 2px;
     /* height: 50em; */
     display: grid;
     background-color: #020202;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr 1fr 7fr 2fr; */
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr 1fr 7fr 2fr; */
     grid-template-areas: 
-        "header header header"
-        "main main main"
-        "aside aside nav"
-        "footer footer footer"
+        "main"
+        "div"
+        "footer"
+        "nav"
+        "header"
     
     ;
 
 }
-/* 
-.otro-contenedor{
-    display: grid;
-    padding: 2px;
-    background-color: aqua;
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "aside aside nav"
-        "footer footer footer"
-    ;
-} */
 header {
     grid-area: header;
 
@@ -74,8 +84,8 @@ footer{
     height: 5em;
 }
 .barra-titulo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px; 
+    font-family: 'emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 12px; 
     color: #f0ffff;
     list-style-type: none;
     text-align:center;
@@ -187,18 +197,14 @@ footer{
 .imagenes_inferiores{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* grid-auto-flow: row;
-    flex-flow: row wrap;
-    grid-column: auto;
-    width: 3em; */
+
     padding: 5px;
     margin: 2px;
-    /* width: 2rem;
-    height: 3rem; */
+
 }
 .marca{
-    width: 12em;
-    height: 8em;
+    width: 4em;
+    height: 3em;
 }
 .datos-ubicacion{
     display: flex;
@@ -255,4 +261,83 @@ footer{
     grid-row: 1fr 1fr 1fr;
     
 
+}
+/* barra social media */
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 350px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+    .social ul li a img {width: 20px;}
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-instagram {background: #e85e7a;}
+	.social ul li .icon-whatsapp {background: #6baf72;}
+	/* .social ul li .icon-pinterest {background: #ae181f;} */
+	.social ul li .icon-mail {background: #91cce3;}
+
+	.social ul li a:hover {
+		background: rgb(113, 112, 112); /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+    .envio{
+        background-color:black;
+    }
+    .footer-n{
+        background-color: black;
+        color: #ce9494;
+    }
+    .txt-envios{
+        color: red;
+
+    }
+
+@media screen and (min-width: 768px) {
+    .social {
+        top: 250px; /* Bajamos la barra 200px de arriba a abajo */
+    }
+    .fondo-inicio-p{
+        display: none;    
+    }
+    .fondo-inicio{
+        display:block;
+        width: 760px;
+    }
+    
+    .nombre-negocio{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    barra-titulo {
+        font-size: 18px; 
+        
+    }
+    .marca{
+        width: 10em;
+        height: 7em;
+    }
+    .social ul li a img {width: 50px;}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .fondo-inicio{
+        width: 1000px;
+    }
+    .social ul li a img {width: 60px;}
 }
