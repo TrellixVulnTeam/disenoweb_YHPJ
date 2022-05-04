@@ -84,7 +84,7 @@ footer{
     height: 5em;
 }
 .barra-titulo {
-    font-family: 'emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: 'Emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
     font-size: 12px; 
     color: #f0ffff;
     list-style-type: none;
@@ -105,11 +105,17 @@ footer{
     font-size: 2em;
 
 }
-
+.lista_especialistas{
+    height: 200px;
+    background-color: black;
+}
 .especialidades {
-    background-color: #ce9494;
+    background-color: black;
+    color: red;
+    font-family: Emblem;
+    font-size: 12px;
     list-style-type: none;
-    width: 400px;
+    text-align: center;
 }
 .logo {
     order: -1;
@@ -166,16 +172,37 @@ footer{
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
 }
-.lista_especialista {
+/* .lista_especialista {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 300px;
+} */
+.datos_ubicacion{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    align-items: center;
+    height: 400px;
+    background-color: black;
 }
-.datos-ubicacion iframe {
-    padding: 15px;
-    justify-content: center;
+.datos_ubicacion iframe {
+    padding: 5px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 220px;
+    height: 300px;
+    /* width="800" height="355" */
 
+}
+.img-productos-amor, .img-productos-dir {
+    display: none;
+}
+.img-productos-bomba{
+    width: 100px;
+}
+.col-4{
+    background-color: black;
 }
 .titulo_auxiliar{
     display: flex;
@@ -188,7 +215,7 @@ footer{
 }
 .titulo {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     font-style: italic;
     color: #f14e4e;
     background-color: #080808;
@@ -202,17 +229,16 @@ footer{
     margin: 2px;
 
 }
+.imagenes_marcas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .marca{
     width: 4em;
     height: 3em;
 }
-.datos-ubicacion{
-    display: flex;
-    flex-flow: column wrap;
-}
-.datos-ubicacion iframe{
-    width: 300em;
-}
+
 .datos_contacto {
     display: flex;
     flex-flow: column wrap;
@@ -332,7 +358,30 @@ footer{
         height: 7em;
     }
     .social ul li a img {width: 50px;}
-
+    .datos_ubicacion{
+        height: 400px;
+    }
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 760px;
+        height: 355px;
+    
+    }
+    .titulo {
+        font-size: 25px;
+        
+    }
+    .img-productos-amor, .img-productos-bomba, .img-productos-dir {
+        display:block;
+        width: 250px;
+    }
+    
+    .especialidades {
+        font-size: 18px;
+    }
+    .lista_especialistas{
+        height: 350px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -340,4 +389,23 @@ footer{
         width: 1000px;
     }
     .social ul li a img {width: 60px;}
+    .datos_ubicacion{
+        height: 700px;
+    }
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 1000px;
+        height: 444px;
+    
+    }
+    .titulo {
+        font-size: 30px;
+        
+    }
+    .especialidades {
+        font-size: 22px;
+    }
+    .lista_especialistas{
+        height: 400px;
+    }
 }
