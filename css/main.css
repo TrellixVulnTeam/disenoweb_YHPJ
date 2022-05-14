@@ -1,397 +1,119 @@
-@import url(//db.onlinewebfonts.com/c/7b332d1e093f175988afb875e2883f40?family=Emblem);
-
-@font-face {font-family: "Emblem";
-
-    src: url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.eot"); /* IE9*/
-
-    src: url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-
-    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.woff2") format("woff2"), /* chrome firefox */
-
-    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.woff") format("woff"), /* chrome firefox */
-
-    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-
-    url("http://db.onlinewebfonts.com/t/7b332d1e093f175988afb875e2883f40.svg#Emblem") format("svg"); /* iOS 4.1- */
-
-}
-.imagen-fondo{
-    background-color: black;
-    display: flex;
-    justify-content:center;
-}
-.fondo-inicio-p{
-    display: block;
-    width: 300px;    
-}
-.fondo-inicio{
-    display: none;
-}
-.nombre-negocio{
-    text-align:  center;
-    font-family: Emblem;
-    font-size: 30px;
-    font-weight: 200;
-}
-header, aside, main , nav, footer{
-    /* border: solid 1px blue; */
-    background-color: black;
-}
-
-header {
-    grid-area: header;
-
-}
-main{
-    grid-area: main;
-}
-aside{
-    grid-area: aside;
-    justify-self: center;
-}
-nav{
-    grid-area: nav;
-    justify-content: center;
-    justify-self: end;
-}
-footer{
-    grid-area: footer;
-}
-.head_titulo{
-    display: flex;
-    flex-flow: row wrap;
-    padding: 5px;
-    background-color: #080808;
-    border-color: #c23308;
-    border-style:solid;
-    border-width: 3px;
-    justify-content: space-around;
-    width: 87em;
-    height: 5em;
-}
+@charset "UTF-8";
 .barra-titulo {
-    font-family: 'Emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
-    font-size: 12px; 
-    color: #f0ffff;
-    list-style-type: none;
-    text-align:center;
-    
-}
+  font-family: 'Emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  font-size: 12px;
+  color: #f0ffff;
+  list-style-type: none;
+  text-align: center; }
 
-.nombre_negocio{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #c23308;
-    color: #010101;
-    width: 44em;
-    height: 4em;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+.imagen-fondo {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
-}
-.lista_especialistas{
-    height: 200px;
-    background-color: black;
-}
-.especialidades {
-    background-color: black;
-    color: red;
-    font-family: Emblem;
-    font-size: 12px;
-    list-style-type: none;
-    text-align: center;
-}
-.logo {
-    order: -1;
+.fondo-inicio-p {
+  display: block;
+  width: 300px; }
+
+.fondo-inicio {
+  display: block;
+  width: 300px; }
+
+/* barra social media */
+.social {
+  position: fixed;
+  /* posición en pantalla fija */
+  right: 0;
+  /* Establecemos la barra a la derecha */
+  top: 350px;
+  /* Bajo la barra de arriba a abajo */
+  z-index: 2000;
+  /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */ }
+  .social ul {
+    list-style: none; }
+    .social ul .icon-facebook {
+      background-color: #3b5998; }
+    .social ul .icon-instagram {
+      background-color: #e85e7a; }
+    .social ul .icon-whatsapp {
+      background-color: #6baf72; }
+    .social ul .icon-mail {
+      background-color: #91cce3; }
+    .social ul li a {
+      display: inline-block;
+      color: #fff;
+      background: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
+      /* Establecemos una transición a todas las propiedades */ }
+      .social ul li a img {
+        width: 20px; }
+
+@media screen and (min-width: 768px) {
+  .barra-titulo {
+    font-size: 16px; }
+  .social {
+    top: 250px;
+    /* Bajamos la barra 250px de arriba a abajo */
+    left: 0; }
+  .fondo-inicio-p {
+    display: none; }
+  .fondo-inicio {
+    display: block;
+    width: 760px; }
+  .social ul li a img {
+    width: 50px; }
+  .social ul li a:hover {
+    background: #717070;
+    /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px;
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */ } }
+
+@media screen and (min-width: 1024px) {
+  .barra-titulo {
+    font-size: 18px; }
+  .fondo-inicio {
+    width: 1000px; }
+  .social ul li a img {
+    width: 60px; } }
+
+.datos_ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  background-color: black; }
+  .datos_ubicacion iframe {
     padding: 5px;
-    width: 4em;
-    height: 4em;
-
-}
-.social-icons ol {
-    background-color: #010101;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    justify-items: center;
-    list-style-type: none;
-    width: 2em;
-    height: 5em;
-    
-  }
-  
-.social{
-    max-width: 100%;
-    max-height: 100%;
-    /* width: 2em; */
-    /* width: 1.5em ; */
-
-}  
-.foto-centro{
-    width: 65em;
-    height: 25em;
-}
-.menu h2 ul {
-    list-style-type: none;
-    color: #f0ffff;
-}
-
-.menu{
-    display: grid;
-    grid-template-rows: 5;
-    background-color: #975757;
-    color: #f0ffff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-    /* justify-content: center; */
-    justify-items:auto;
-    align-items: center;
-    align-content: space-around;
-
-}
-
-.envios{
-    align-items: center;
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
-}
-/* .lista_especialista {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 300px;
-} */
-.datos_ubicacion{
-    display: flex;
-    flex-direction: column;
-    /* justify-content:center; */
-    align-items: center;
-    height: 400px;
-    background-color: black;
-}
-.datos_ubicacion iframe {
-    padding: 5px;
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 220px;
-    height: 300px;
-    /* width="800" height="355" */
+    height: 300px; }
 
-}
-.img-productos-amor, .img-productos-dir {
-    display: none;
-}
-.img-productos-bomba{
-    width: 100px;
-}
-.col-4{
-    background-color: black;
-}
-.titulo_auxiliar{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:flex-start;
-    flex-flow: column wrap;
-    align-items: center;
-    text-align: center;
-    
-}
-.titulo {
+@media screen and (min-width: 768px) {
+  .datos_ubicacion {
+    height: 400px; }
+  .datos_ubicacion iframe {
+    padding: 15px;
+    width: 760px;
+    height: 355px; }
+  .titulo {
     text-align: center;
     font-size: 15px;
     font-style: italic;
     color: #f14e4e;
-    background-color: #080808;
-    
-}
-.imagenes_inferiores{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-
-    padding: 5px;
-    margin: 2px;
-
-}
-.imagenes_marcas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.marca{
-    width: 4em;
-    height: 3em;
-}
-
-.datos_contacto {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    width: 64em;
-    height: 25em;
-    padding: 3px;
-    line-height: 2px;
-    list-style: circle;
-    background-color: #9b6060;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    padding: 18px;
-}
-
-.datos_contacto fieldset legend{
-    font-size: x-large;
-}
-.datos_contacto fieldset label{
-    font-size: large;
-    padding: 15px;
-}
-.datos_contacto fieldset{
-    padding: 18px;
-
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 62em;
-    height: 22em;
-    
-
-}
-
-.imagenes-marcas{
-    display: grid;
-    justify-content: space-around;
-    justify-items: center;
-    grid-area: auto;
-    grid-column: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
-    
-
-}
-/* barra social media */
-.social {
-	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	left: 0; /* Establecemos la barra en la izquierda */
-	top: 350px; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
-}
-
-	.social ul {
-		list-style: none;
-	}
-
-	.social ul li a {
-		display: inline-block;
-		color:#fff;
-		background: #000;
-		padding: 10px 15px;
-		text-decoration: none;
-		-webkit-transition:all 500ms ease;
-		-o-transition:all 500ms ease;
-		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
-	}
-    .social ul li a img {width: 20px;}
-	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-instagram {background: #e85e7a;}
-	.social ul li .icon-whatsapp {background: #6baf72;}
-	/* .social ul li .icon-pinterest {background: #ae181f;} */
-	.social ul li .icon-mail {background: #91cce3;}
-
-	.social ul li a:hover {
-		background: rgb(113, 112, 112); /* Cambiamos el fondo cuando el usuario pase el mouse */
-		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
-	}
-    .envio{
-        background-color:black;
-    }
-    .footer-n{
-        background-color: black;
-        color: #ce9494;
-    }
-    .txt-envios{
-        color: red;
-
-    }
-
-@media screen and (min-width: 768px) {
-    .social {
-        top: 250px; /* Bajamos la barra 200px de arriba a abajo */
-    }
-    .fondo-inicio-p{
-        display: none;    
-    }
-    .fondo-inicio{
-        display:block;
-        width: 760px;
-    }
-    
-    .nombre-negocio{
-        font-size: 50px;
-        font-weight: 400;
-    }
-    barra-titulo {
-        font-size: 18px; 
-        
-    }
-    .marca{
-        width: 10em;
-        height: 7em;
-    }
-    .social ul li a img {width: 50px;}
-    .datos_ubicacion{
-        height: 400px;
-    }
-    .datos_ubicacion iframe {
-        padding: 15px;
-        width: 760px;
-        height: 355px;
-    
-    }
-    .titulo {
-        font-size: 25px;
-        
-    }
-    .img-productos-amor, .img-productos-bomba, .img-productos-dir {
-        display:block;
-        width: 250px;
-    }
-    
-    .especialidades {
-        font-size: 18px;
-    }
-    .lista_especialistas{
-        height: 350px;
-    }
-}
+    background-color: #080808; }
+  .titulo {
+    font-size: 25px; } }
 
 @media screen and (min-width: 1024px) {
-    .fondo-inicio{
-        width: 1000px;
-    }
-    .social ul li a img {width: 60px;}
-    .datos_ubicacion{
-        height: 700px;
-    }
-    .datos_ubicacion iframe {
-        padding: 15px;
-        width: 1000px;
-        height: 444px;
-    
-    }
-    .titulo {
-        font-size: 30px;
-        
-    }
-    .especialidades {
-        font-size: 22px;
-    }
-    .lista_especialistas{
-        height: 400px;
-    }
-}
+  .datos_ubicacion {
+    height: 700px; }
+  .datos_ubicacion iframe {
+    padding: 15px;
+    width: 1000px;
+    height: 444px; }
+  .titulo {
+    font-size: 30px; } }

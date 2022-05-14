@@ -1,0 +1,50 @@
+.datos_ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background-color: black;
+    iframe{
+
+        padding: 5px;
+        width: 220px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .datos_ubicacion{
+        height: 400px;
+    }
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 760px;
+        height: 355px;
+
+    }
+    .titulo {
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+        color: #f14e4e;
+        background-color: #080808;
+        
+    }
+    .titulo{ font-size: 25px;}
+}
+@media screen and (min-width: 1024px) {
+    .datos_ubicacion{
+        height: 700px;
+    }
+    .datos_ubicacion iframe {
+        padding: 15px;
+        width: 1000px;
+        height: 444px;
+    
+    }
+    .titulo{
+        font-size: 30px;
+    }
+}
