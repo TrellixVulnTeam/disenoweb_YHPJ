@@ -37,21 +37,7 @@ header, aside, main , nav, footer{
     /* border: solid 1px blue; */
     background-color: black;
 }
-.contenedor , .otro-contenedor{
-    padding: 2px;
-    /* height: 50em; */
-    display: grid;
-    background-color: #020202;
-    grid-template-areas: 
-        "main"
-        "div"
-        "footer"
-        "nav"
-        "header"
-    
-    ;
 
-}
 header {
     grid-area: header;
 
