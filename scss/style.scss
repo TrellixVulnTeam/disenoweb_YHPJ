@@ -1,2 +1,29 @@
+@font-face {
+    font-family: 'Emblem';
+    src: url('../fonts/emblem_1-webfont.woff2') format('woff2'),
+      url('../fonts/emblem_1-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'bnkgo';
+    src: url('../fonts/bnkgothm_1-webfont.woff2') format('woff2'),
+      url('../fonts/bnkgothm_1-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'EmblemI';
+    src: url('../fonts/emblemi_1-webfont.woff2') format('woff2'),
+      url('../fonts/emblemi_1-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+  }
+@import 'contacto.scss';  
 @import 'index.scss';
-@import 'ubicacion.scss'
+@import 'ubicacion.scss';
+@import 'titulo.scss';
+@import 'servicios.scss';
+@import 'envios.scss';
+body{
+    background-color: black;}

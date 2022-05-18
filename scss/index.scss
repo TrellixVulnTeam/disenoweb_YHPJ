@@ -1,22 +1,19 @@
 .barra-titulo {
-    font-family: 'Emblem', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: 'bnkgo';
     font-size: 12px; 
     color: #f0ffff;
     list-style-type: none;
     text-align:center;
     
 }
-.imagen-fondo{
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-}
+
 .fondo-inicio-p{
+    justify-content: center;
     display: block;
     width: 300px;    
 }
 .fondo-inicio{
+    align-items: center;
     display: block;
     width: 300px;
 }
@@ -62,7 +59,7 @@
         
     }
     .social {
-        top: 250px; /* Bajamos la barra 250px de arriba a abajo */
+        top: 350px; /* Bajamos la barra 250px de arriba a abajo */
         left: 0;
     }
     .fondo-inicio-p{
@@ -88,5 +85,8 @@
     .fondo-inicio{
         width: 1000px;
     }
-    .social ul li a img {width: 60px;}
+    .social {
+        top: 400px; /* Bajamos la barra 250px de arriba a abajo */
+        .ul li a img {width: 60px;}
+    }
 }
